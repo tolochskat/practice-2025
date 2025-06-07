@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ресурсы проекта BindWord XP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .resources-container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .resource-category {
+            margin-bottom: 2.5rem;
+            background: #f8f9fa;
+            padding: 1.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        .category-title {
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+            margin-top: 0;
+        }
+        .resource-item {
+            padding: 1rem;
+            margin: 1rem 0;
+            background: white;
+            border-radius: 4px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        .resource-item a {
+            color: #3498db;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .resource-item a:hover {
+            text-decoration: underline;
+        }
+        .resource-description {
+            margin-top: 0.5rem;
+            color: #555;
+        }
+        .partner-logo {
+            max-height: 60px;
+            margin-right: 1rem;
+            vertical-align: middle;
+        }
+        .documentation-section {
+            margin-top: 1.5rem;
+            padding: 1rem;
+            background: #fff;
+            border-radius: 4px;
+            border-left: 4px solid #3498db;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>BindWord XP</h1>
+                <p>Десктопное приложение для NLP-анализа</p>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="blog.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+        </nav>
+    </header>
+
+    <main class="resources-container">
+        <h1 class="page-title">Полезные ресурсы</h1>
+
+        <div class="resource-category">
+            <h2 class="category-title">Организация-партнер</h2>
+            <div class="resource-item">
+                <img src="images/photo_5298935340918241176_m.jpg" alt="Логотип Московского Политеха" class="partner-logo">
+                <a href="https://mospolytech.ru/" target="_blank">Московский Политех</a>
+                <div class="resource-description">
+                    Официальный сайт университета. На базе Московского Политеха разрабатывается проект BindWord XP.
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-category">
+            <h2 class="category-title">Технологии проекта</h2>
+            
+            <div class="resource-item">
+                <a href="https://spacy.io/" target="_blank">SpaCy</a>
+                <div class="resource-description">
+                    Промышленная библиотека для обработки естественного языка на Python, используемая в нашем проекте.
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <a href="https://www.nltk.org/" target="_blank">NLTK</a>
+                <div class="resource-description">
+                    Набор библиотек и программ для обработки естественного языка.
+                </div>
+            </div>
+            
+            <div class="resource-item">
+                <a href="https://www.riverbankcomputing.com/software/pyqt/" target="_blank">PyQt</a>
+                <div class="resource-description">
+                    Библиотека для создания графического интерфейса на Python.
+                </div>
+            </div>
+        </div>
+
+        <div class="resource-category">
+            <h2 class="category-title">Документация проекта</h2>
+
+            <div class="documentation-section">
+                <h3>Описание интерфейса BindWord XP</h3>
+                <h4>Основной интерфейс</h4>
+                <p>Главное окно (MainWindow) — это центр работы пользователя с программой. Здесь можно ввести текст, запустить нужный тип анализа и посмотреть результаты в виде таблиц, графиков и текстов.</p>
+                
+                <h4>Панель управления</h4>
+                <ol>
+                    <li><strong>Файл</strong> - меню для загрузки и сохранения текстов</li>
+                    <li><strong>Сохранить</strong> - сохраняет результаты анализа (.txt, .csv, .json)</li>
+                    <li><strong>Проверка</strong> - предварительная проверка текста</li>
+                    <li><strong>Слова</strong> - анализ частотности слов</li>
+                    <li><strong>Векторы</strong> - векторное представление текста (Word2Vec, TF-IDF)</li>
+                    <li><strong>Комбинации</strong> - анализ n-грамм</li>
+                    <li><strong>Тематический анализ</strong> - выявление скрытых тем (LDA/NMF)</li>
+                    <li><strong>Распознавание сущностей (NER)</strong> - выделение имен, организаций, дат</li>
+                    <li><strong>Переключатель модели</strong> - выбор языка анализа</li>
+                    <li><strong>Кнопка Старт</strong> - запуск анализа</li>
+                </ol>
+
+                <h4>Центральное текстовое поле</h4>
+                <p>Для ввода текста вручную или автоматически при открытии файла.</p>
+
+                <h4>Правый блок интерфейса</h4>
+                <p>Вкладки с результатами анализа: таблицы слов, комбинации, тематические блоки, именованные сущности.</p>
+
+                <h4>Нижний блок</h4>
+                <p>Графики частот слов, визуализация n-грамм, t-SNE проекция векторов, тематические связи.</p>
+
+                <h4>Строка состояния</h4>
+                <p>Показывает количество слов и время анализа.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>© 2025 Московский Политех | Проект BindWord XP</p>
+        <p>Куратор: Самелик Юрий Леонидович</p>
+    </footer>
+</body>
+</html>

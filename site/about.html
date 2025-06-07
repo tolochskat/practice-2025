@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>О проекте BindWord XP</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .feature-block {
+            background: #f8f9fa;
+            border-left: 4px solid #3498db;
+            padding: 1.5rem;
+            margin: 1rem 0;
+        }
+        .interface-screenshot {
+            width: 80%;
+            max-width: 800px;
+            display: block;
+            margin: 2rem auto;
+            border: 1px solid #ddd;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .two-columns {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        @media (max-width: 768px) {
+            .two-columns {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html">
+                <h1>BindWord XP</h1>
+                <p>Десктопное приложение для NLP-анализа</p>
+            </a>
+        </div>
+        <nav>
+            <a href="index.html">Главная</a>
+            <a href="about.html">О проекте</a>
+            <a href="team.html">Участники</a>
+            <a href="blog.html">Журнал</a>
+            <a href="resources.html">Ресурсы</a>
+        </nav>
+    </header>
+
+    <main>
+        <h1 class="page-title" style="text-align: center;">О проекте</h1>
+        
+        <section>
+            <div class="feature-block">
+                <h2>Актуальность</h2>
+                <p>BindWord XP решает проблему отсутствия простых оффлайн-инструментов для анализа текста на основе NLP (Natural Language Processing). В отличие от облачных решений, наше приложение:</p>
+                <ul>
+                    <li>Работает без интернета</li>
+                    <li>Имеет открытый исходный код</li>
+                    <li>Поддерживает русский и английский языки</li>
+                    <li>Предоставляет комплексный анализ в одном интерфейсе</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <div class="feature-block">
+                <h2>Целевая аудитория</h2>
+                <div class="two-columns">
+                    <div>
+                        <h3>Основные пользователи:</h3>
+                        <ul>
+                            <li>Студенты и исследователи</li>
+                            <li>Журналисты и копирайтеры</li>
+                            <li>Преподаватели</li>
+                            <li>Малый бизнес (анализ отзывов)</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Потребности:</h3>
+                        <ul>
+                            <li>Простота использования</li>
+                            <li>Подробная статистика</li>
+                            <li>Экспорт результатов</li>
+                            <li>Поддержка русского языка</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="feature-block">
+                <h2>Функционал</h2>
+                <h3>1. Анализ текста</h3>
+                <ul>
+                    <li>Подсчёт слов и их частотности</li>
+                    <li>Выявление ключевых тем (LDA/NMF)</li>
+                    <li>Распознавание именованных сущностей (NER)</li>
+                </ul>
+
+                <h3>2. Векторизация</h3>
+                <p>Преобразование текста в числовые векторы с помощью:</p>
+                <ul>
+                    <li>Word2Vec</li>
+                    <li>TF-IDF</li>
+                    <li>BERT (в будущих версиях)</li>
+                </ul>
+
+                <h3>3. Визуализация</h3>
+                <ul>
+                    <li>Графики частот слов</li>
+                    <li>Карта тем</li>
+                    <li>t-SNE проекция векторов</li>
+                </ul>
+            </div>
+        </section>
+
+        <section>
+            <h2 class="page-title" style="text-align: center;">Интерфейс</h2>
+
+            <figure>
+                <img src="images/image.png" alt="Скриншот интерфейса BindWord XP" class="interface-screenshot">
+                <figcaption class="image-caption">Скриншот интерфейса BindWord XP</figcaption>
+            </figure>
+
+            <div class="feature-block">
+                <div class="two-columns">
+                    <div>
+                        <h3>Основные элементы:</h3>
+                        <ul>
+                           <li><strong>Панель управления:</strong> Загрузка файлов, выбор анализа</li>
+                            <li><strong>Текстовое поле:</strong> Ввод/редактирование текста</li>
+                            <li><strong>Вкладки результатов:</strong> Таблицы, графики, NER</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3>Экспорт данных:</h3>
+                        <ul>
+                            <li>TXT (текстовый отчёт)</li>
+                            <li>CSV (таблицы)</li>
+                            <li>JSON (структурированные данные)</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="feature-block">
+            <h2>Технологии</h2>
+                <ul>
+                    <li><strong>Python 3.10+</strong> — основной язык разработки</li>
+                    <li><strong>SpaCy/NLTK</strong> — обработка естественного языка</li>
+                    <li><strong>PyQt6</strong> — графический интерфейс</li>
+                    <li><strong>Scikit-learn</strong> — машинное обучение (LDA, TF-IDF)</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Московский Политех | Проект BindWord XP</p>
+        <p>Куратор: Самелик Юрий Леонидович</p>
+    </footer>
+</body>
+</html>
